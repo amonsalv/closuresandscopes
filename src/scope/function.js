@@ -4,5 +4,14 @@
 //No olvidemos que si creamos una variable dentro de una funcion debemos declararla, y luego si asignarle un valor porque si asignamos una variable sin declarar está sera global.
 
 function greeting() {
-    
+    let userName = 'Ana'
+    console.log(userName);
+
+    if(userName === 'Ana'){
+        console.log(`Hello ${userName}!`)
+    }
 }
+
+greeting();
+console.log(useName); 
+//No podemos acceder porque userName esta encapsulado dentro de greeting(), no es global``
